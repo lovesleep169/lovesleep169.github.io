@@ -49,7 +49,36 @@
 <!-- /Analytics -->
 
 
-  
+  <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "106848661167873");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   <section data-bs-version="5.1" class="menu menu1 cid-sTNphz1OGI" once="menu" id="menu1-b9">
     
 
@@ -147,7 +176,7 @@
     
 </section>
 
-<section class="team2 medicalm4_team2 cid-sR9UgKpNJz" id="team2-6s" data-rv-view="6425">
+<section class="team2 medicalm4_team2 cid-sR9UgKpNJz" id="team2-6s" data-rv-view="2429">
 
     
 
@@ -275,7 +304,7 @@
     </div>
 </section>
 
-<section class="team2 medicalm4_team2 cid-sSSTwaOWcd" id="team2-9n" data-rv-view="6431">
+<section class="team2 medicalm4_team2 cid-sSSTwaOWcd" id="team2-9n" data-rv-view="2435">
 
     
 
@@ -401,7 +430,7 @@
     </div>
 </section>
 
-<section class="team2 medicalm4_team2 cid-sRa0W3XOoI" id="team2-6t" data-rv-view="6437">
+<section class="team2 medicalm4_team2 cid-sRa0W3XOoI" id="team2-6t" data-rv-view="2441">
 
     
 
@@ -517,7 +546,7 @@
     </div>
 </section>
 
-<section class="team2 medicalm4_team2 cid-sSSWUrEppG" id="team2-9o" data-rv-view="6443">
+<section class="team2 medicalm4_team2 cid-sSSWUrEppG" id="team2-9o" data-rv-view="2447">
 
     
 
@@ -663,7 +692,7 @@
     
 </section>
 
-<section class="team2 medicalm4_team2 cid-sRa3j8LsYK" id="team2-6u" data-rv-view="6452">
+<section class="team2 medicalm4_team2 cid-sRa3j8LsYK" id="team2-6u" data-rv-view="2456">
 
     
 
@@ -811,7 +840,7 @@
     
 </section>
 
-<section class="team2 medicalm4_team2 cid-sRabQXnJUR" id="team2-6v" data-rv-view="6461">
+<section class="team2 medicalm4_team2 cid-sRabQXnJUR" id="team2-6v" data-rv-view="2465">
 
     
 
@@ -928,7 +957,7 @@
     </div>
 </section>
 
-<section class="team2 medicalm4_team2 cid-sRacuMQTLk" id="team2-6w" data-rv-view="6467">
+<section class="team2 medicalm4_team2 cid-sRacuMQTLk" id="team2-6w" data-rv-view="2471">
 
     
 
@@ -1045,7 +1074,7 @@
     </div>
 </section>
 
-<section class="team2 medicalm4_team2 cid-sRadyQOHa2" id="team2-6x" data-rv-view="6473">
+<section class="team2 medicalm4_team2 cid-sRadyQOHa2" id="team2-6x" data-rv-view="2477">
 
     
 
