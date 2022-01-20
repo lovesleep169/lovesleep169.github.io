@@ -2684,6 +2684,77 @@ section.lazy-placeholder:after {
 .cid-sUOfSZa5ow .text-content .list-block .list-item-text {
   color: #4f5b77;
 }
+.cid-sV2jhgryAQ {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  background-color: #e3ecea;
+}
+.cid-sV2jhgryAQ .content_box {
+  padding: 10px 3rem;
+  background-color: #fef2f2;
+  text-align: center;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .cid-sV2jhgryAQ .content_box {
+    margin-top: 30px;
+    padding: 30px 1rem;
+  }
+}
+.cid-sV2jhgryAQ .mbr-section-title {
+  color: #130947;
+  margin-bottom: 29px;
+}
+.cid-sV2jhgryAQ img,
+.cid-sV2jhgryAQ .image-wrapper {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cid-sV2jhgryAQ .list_widget {
+  padding-bottom: 20px;
+}
+.cid-sV2jhgryAQ .mbr-section-subtitle {
+  line-height: 1.2727em;
+  color: #202020;
+}
+.cid-sV2jhgryAQ .linkBtn {
+  margin-top: 23px;
+}
+.cid-sV2jhgryAQ .linkBtn a {
+  position: relative;
+  display: inline-block;
+  padding: 1px 7px;
+  vertical-align: middle;
+  overflow: hidden;
+  line-height: 2em;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .2em;
+}
+.cid-sV2jhgryAQ .linkBtn a:after,
+.cid-sV2jhgryAQ .linkBtn a:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background-color: currentColor;
+  transition: transform 0.4s cubic-bezier(0.31, 0.29, 0.05, 0.96);
+}
+.cid-sV2jhgryAQ .linkBtn a:before {
+  left: 0;
+}
+.cid-sV2jhgryAQ .linkBtn a:after {
+  left: -100%;
+  transition-delay: .3s;
+}
+.cid-sV2jhgryAQ .linkBtn a:hover:before,
+.cid-sV2jhgryAQ .linkBtn a:hover:after {
+  transform: translateX(100%);
+}
 .cid-sOPAd432Ni {
   padding-top: 5rem;
   padding-bottom: 4rem;
