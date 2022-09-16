@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "page10.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "medicalm4",
       "title": "MedicalM4",
@@ -48,7 +48,7 @@
     "site_lang": "en",
     "imageResize": false,
     "uniqCompNum": 476,
-    "versionPublish": "5.6.11",
+    "versionPublish": "5.6.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/isleep-logo.svg",
     "mbrsiteDomain": "x2en0e9azi",
@@ -71,7 +71,9 @@
     "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-WCMKZV4D4E\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-WCMKZV4D4E');\n</script>",
     "global_after_body": "<!-- Messenger 洽談外掛程式 Code -->\n    <div id=\"fb-root\"></div>\n\n    <!-- Your 洽談外掛程式 code -->\n    <div id=\"fb-customer-chat\" class=\"fb-customerchat\">\n    </div>\n\n    <script>\n      var chatbox = document.getElementById('fb-customer-chat');\n      chatbox.setAttribute(\"page_id\", \"106848661167873\");\n      chatbox.setAttribute(\"attribution\", \"biz_inbox\");\n    </script>\n\n    <!-- Your SDK code -->\n    <script>\n      window.fbAsyncInit = function() {\n        FB.init({\n          xfbml            : true,\n          version          : 'v12.0'\n        });\n      };\n\n      (function(d, s, id) {\n        var js, fjs = d.getElementsByTagName(s)[0];\n        if (d.getElementById(id)) return;\n        js = d.createElement(s); js.id = id;\n        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';\n        fjs.parentNode.insertBefore(js, fjs);\n      }(document, 'script', 'facebook-jssdk'));\n    </script>",
     "global_footer_custom": "  \n    <script src=\"https://form.jotform.com/static/feedback2.js\" type=\"text/javascript\">\n      new JotformFeedback({\n        formId: \"220112982520445\",\n        buttonText: \"心理諮商預約\",\n        base: \"https://form.jotform.com/\",\n        background: \"#F59202\",\n        fontColor: \"#FFFFFF\",\n\nbuttonSide: \"bottom\",\n        buttonAlign: \"left\",\n        type: false,\n        width: 700,\n        height: 500,\n        isCardForm: false\n      });\n    </script>\n\n    \n    <script src=\"https://form.jotform.com/static/feedback2.js\" type=\"text/javascript\">\n      new JotformFeedback({\n        formId: \"220113189566455\",\n        buttonText: \"心理衡鑑預約\",\n        base: \"https://form.jotform.com/\",\n        background: \"#50e3c2\",\n        fontColor: \"#FFFFFF\",\n        buttonSide: \"bottom\",\n        buttonAlign: \"left\",\n        type: false,\n        width: 700,\n        height: 500,\n        isCardForm: false\n      });\n    </script>\n   \n    <script src=\"https://form.jotform.com/static/feedback2.js\" type=\"text/javascript\">\n      new JotformFeedback({\n        formId: \"220113922461444\",\n        buttonText: \"睡眠評估預約\",\n        base: \"https://form.jotform.com/\",\n        background: \"#1a7ae9\",\n        fontColor: \"#FFFFFF\",\n        buttonSide: \"bottom\",\n        buttonAlign: \"left\",\n        type: false,\n        width: 700,\n        height: 500,\n        isCardForm: false\n      });\n    </script>\n\n<style>\nbuttonText {\n    writing-mode: vertical-rl !important;\n  }\n</style>",
-    "global_header_custom": ""
+    "global_header_custom": "",
+    "publishType": "local",
+    "publishPath": "file:///C:/Users/st99/Documents/%E8%A1%8C%E6%94%BFOnedrive/OneDrive/%E8%AB%AE%E5%95%86%E8%A1%8C%E6%94%BF%E6%96%87%E4%BB%B6/%E7%B6%B2%E7%AB%99/0912"
   },
   "pages": {
     "index.html": {
@@ -1008,7 +1010,7 @@
           },
           "_name": "tabs1",
           "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"tabs1 tabs medicalm4_tabs1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" group=\"Tabs\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n    <mbr-parameters>\n        <input inline max=\"9\" min=\"0\" name=\"paddingTop\" step=\"1\" title=\"Top\" type=\"range\" value=\"3\">\n        <input inline max=\"9\" min=\"0\" name=\"paddingBottom\" step=\"1\" title=\"Bottom\" type=\"range\" value=\"3\">\n\n        <header>Show/Hide</header>\n        <input checked name=\"showTitle\" title=\"Title\" type=\"checkbox\">\n        <input checked name=\"showSubtitle\" title=\"Subtitle\" type=\"checkbox\">\n        <header>Tab</header>\n        <input name=\"showTabTitle\" title=\"Title\" type=\"checkbox\" checked>\n        <input name=\"showTabText\" title=\"Text\" type=\"checkbox\" checked>\n        <input name=\"showList\" title=\"List\" type=\"checkbox\">\n        <input condition=\"showList\" name=\"showCounter\" title=\"List Icon\" type=\"checkbox\" checked>\n        <header>Color</header>\n        <input condition=\"showCounter&&showList\" name=\"counterColor\" title=\"List Icon\" type=\"color\" value=\"#4f87fb\">\n        <input name=\"tabsColor\" title=\"Tabs\" type=\"color\" value=\"#4f5b77\">\n        <input name=\"activeTabColor\" title=\"Active Tab\" type=\"color\" value=\"#f6bd60\">\n        <header>Amount</header>\n        <select name=\"bootstrapTabs\" title=\"Tabs Count\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <header>Background</header>\n        <fieldset name=\"bg\" parallax type=\"background\">\n            <input parallax title=\"Image\" type=\"image\" value=\"../_images/background1.jpg\">\n            <input title=\"Color\" type=\"color\" value=\"#f7ede2\" selected>\n            <input title=\"Video\" type=\"video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input checked condition=\"bg.type !== 'color'\" name=\"overlay\" title=\"Overlay\" type=\"checkbox\">\n        <input condition=\"overlay && bg.type !== 'color'\" name=\"overlayColor\" title=\"Overlay Color\" type=\"color\" value=\"#ffffff\">\n        <input condition=\"overlay && bg.type !== 'color'\" inline max=\"1\" min=\"0\" name=\"overlayOpacity\" step=\"0.1\" title=\"Opacity\" type=\"range\" value=\"0.6\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n    <div class=\"container\">\n        <div class=\"top-part\">\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center mbr-bold\" data-app-selector=\".top-part .mbr-section-subtitle\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">NEWS</h3>\n\n            <h1 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".top-part .mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">\n                最新消息 </h1>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-12 col-md-12\">\n                <ul class=\"nav nav-tabs\" role=\"tablist\">\n                    <li role=\"presentation\" class=\"nav-item first\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab1-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style show active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab0\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-clock mbr-iconfont mbr-iconfont-btn\"></span>為什麼半夜不該看時間？</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 1\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab2-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab1\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-home mbr-iconfont mbr-iconfont-btn\"></span>家暴法的涵蓋對象只有家庭成員嗎？</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 2\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab3-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab2\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>防疫優秀小尖兵!~</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 3\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab4-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab3\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-change-style mbr-iconfont mbr-iconfont-btn\"></span>兒童情緒人際團體開班</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 4\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab5-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab4\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-github mbr-iconfont mbr-iconfont-btn\"></span>正念人際團體</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 5\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab6-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab5\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-smile-face mbr-iconfont mbr-iconfont-btn\"></span>\n                            中秋連假休診公告</a></li>\n                </ul>\n                <div class=\"tab-content\">\n                    <div aria-labelledby=\"medical1-tab1\" class=\"tab-pane active\" id=\"medical1-tab1-content\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/265615493-423108279541908-664096898789282774-n.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">為什麼半夜不該看時間？</h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">通常，你會在什麼時候看時間呢？\n<br>是為了確認現在的時間？\n<br>是為了估算下個行程的空檔？\n<br>是為了調整目前工作的執行進度？\n<br>或是一種不自覺的習慣呢？\n<br>那麼，不時會在深夜查看時間的你，在想些什麼呢？\n<br>心理學有個概念叫「古典制約(classical conditioning)」，\n<br>就是那隻鼎鼎大名，會盯著鈴鐺聲流口水的狗狗。\n<br>起初，喜歡吃肉的狗狗，對於鈴鐺一點反應都沒有，\n<br>在牠的世界裡，那就只是一種聲音。\n<br>後來主人開始在每次用餐前，都會先搖上幾秒鐘的鈴鐺，\n<br>聲響結束後，狗狗的餐碗裡就會擺滿美味的食物。\n<br>久而久之，鈴鐺聲似乎變成一種提醒，知道這是將要開飯的好消息。\n<br>原本沒有什麼特別意義的鈴鐺聲，變成一種有意義的訊號和連結。\n<br>再次聽到鈴聲後，狗狗開始不自覺流下口水。\n<br>時間，是一種強而有力的訊號，告訴我們很多的「該」與「不該」。\n<br>這些提示出現後，通常會伴隨強烈的生心理反應，\n<br>例如：倒抽一口氣、心跳加速、冒冷汗、期待、興奮、煩躁、焦慮、緊張……\n<br>注意到了嗎？不論是哪種反應，大多會是短時間內的強烈反應，\n<br>讓人體的神經系統、內分泌系統和思緒瞬間變得清醒，做足高速運轉的準備。\n<br>對於大部分的人來說，「時間」等於「預做準備」的制約連結就是這樣建立的。\n<br>在白天，查看時間可能會為你帶來滿滿的工作活力和效率，\n<br>但是到了夜晚，這瞬間的清醒可能會造成睡眠的中斷，\n<br>讓你好不容易醞釀起來的睡意煙。消。雲。散！\n<br>一個不經意的查看時間，就會把「必須預作準備」的感覺帶進夜裡，\n<br>打亂好好休息的平靜。\n<br>如果時間制約已經形成，又希望能維持良好睡眠的話該怎麼辦呢？\n<br>幾個小動作，其實就能替你守住睡眠界線，讓你在深夜時分沖淡時間制約的影響。\n<br>例如：將手機調整成靜音，關掉部分通知(如信件、社群軟體、遊戲、投資消息、新聞等)，\n<br>替必須起床的時間設下幾個鬧鐘。\n<br>最重要的是，將手機、手錶、鬧鐘、時鐘等時間指示物，放在床邊無法一眼看到的位置。\n<br>一開始的嘗試可能會讓人很焦慮，這可能是擔心錯過的不習慣。\n<br>或許某些通知和時間點的提示，其實並不一定這麼緊急，\n<br>至少，在這段屬於你睡眠的時候是的。\n<br>習慣在生活中好努力的你，當然會對於時間感覺重視與在意。\n<br>試著暫時放下時間吧！努力後的疲憊，值得一夜的輕鬆和愜意。</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab2\" class=\"tab-pane\" id=\"medical1-tab2-content\" mbr-if=\"bootstrapTabs > 1\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/257777391-5452978528064809-8229265796035212194-n.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">\n                                    家暴法的涵蓋對象只有家庭成員嗎？ </h2>\n                                 <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">法律已擴大保護範圍，除了家庭成員，還包括：\n<br>1. 現有或曾有同居關係\n<br>2.現有或曾有親密關係之未同居伴侶。當中所稱親密關係伴侶，指雙方以情感或性行為為基礎，發展親密之社會互動關係。\n<br>在關係當中如何避免遭受暴力對待呢？\n<br>【摘錄】\n<br>文//王守珍臨床心理師\n<br>　　全文出自【自由評論網】，經作者同意後轉載。\n<br>高嘉瑜立委受林秉樞凌虐，臉部幾乎不成形的照片登出後，全台嘩然，「恐怖情人」再度成為社會熱烈討論的議題。\n<br>在交友過程中，如何避免自己成為家暴的受害者？如何預防自己步入類似的困境？恐怖情人可能具備下列性格特質：\n<br>😈 被動攻擊的特性。表面上是配合、殷勤討好，但骨子裡具攻擊性。事情不如他的期待時，會採取攻擊的特性。\n<br>😈 反社會性格。表面酷酷有禮，但行事強勢且衝動，不會顧及他人的感受，沒有道德感、沒有罪惡感，而且不遵守法律。\n<br>😈 戲劇化或自戀性。表面千情萬種，其實凡事都要以他為中心。</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab3\" class=\"tab-pane\" id=\"medical1-tab3-content\" mbr-if=\"bootstrapTabs > 2\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/3.png\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">防疫優秀小尖兵!~<br></h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">近日本土疫情持續，本所設有以下設備，竭盡守護您的健康\n<br><br>1. 諮商空間裝設透明帷幕，減少飛沫傳染機會。<br>2. 設置飛利浦紫外光殺菌燈、空氣清淨機、水神殺菌霧化機，並每日定時次氯酸水消毒環境。\n<br>3. 廠商定期進行全院消毒，保障你我健康。<br>4. 本所*心理諮商*提供以下服務：\n<br>免費提供個案防護面罩，空間中設有透明隔板，讓您諮商更安心。\n<br><br>若您仍擔心疫情，我們亦提供「線上諮商服務」：\n<br>a.可至本所官網上填寫資料申請線上諮商，將由專人與您聯繫。（參閱連結：https://www.lovesleep169.com.tw/page8.html）\n<br>b.原有諮商個案，若列入居家隔離者或因疫情緊張等因素，可於門診時間來電，協助您安排調整使用線上諮商模式。<br>\n<br>嚴峻疫情中，天母愛舒眠心理治療所與您攜手度過～\n<br>電話☎️：02-28227660\n<br>官網🔗：https://www.lovesleep169.com.tw/index.html<br>\n<br>（各項服務本所保留解釋權，且依中央疫情指揮中心、衛生局、及健保署相關規定辦理，若有調整，不另行通知）<br>\n<br></p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab4\" class=\"tab-pane\" id=\"medical1-tab4-content\" mbr-if=\"bootstrapTabs > 3\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/s-46874627.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">分享一個大好消息給各位！</h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">那就是兒童情緒人際團體秋季班開始招生啦😆\n<br>\n<br>如果您覺得孩子愛發脾氣、小霸王特質、想交朋友但有困難、很多固執的想法和習慣...等等，那麼這課程就來的正是時候了！課程將由專業的臨床心理師陪伴孩子戰勝情緒和交友大魔王!\n<br>\n<br>招生對象：\n<br>國小及幼兒園的孩子\n<br>招生人數：\n<br>3-5位孩子/一個班\n<br>課程時間：\n<br>周一晚上(國小)\n<br>周四下午(幼兒園)\n<br>\n<br>名額有限，歡迎有興趣的家長手刀填寫網路表單，來預約團體前諮詢的時間唷😘\n<br>\n<br>偷偷跟各位說...如果有想要參加團體但時間沒辦法配合的狀況，也可以在表單中許願別的時段唷🥹🥹\n<br>\n<br>報名連結：<a href=\"https://reurl.cc/dWy7Zg\" class=\"text-primary\">https://reurl.cc/dWy7Zg</a>\n<br>-------------------------\n<br>分享一個小故事：\n<br>面對孩子喜歡講不好聽的話應該怎麼辦呢？\n<br>幽默應對是一個不錯的方法唷🫶🏻\n<br>曾經有孩子分享他跟同學的對話如下\n<br>同學：你八七喔!\n<br>孩子：五十六~八八~六十四~\n<br>同學：八九~七十二~\n<br>我們面對孩子口出穢言總是好生氣、急著想修正\n<br>但有時候展現如何化穢言為幽默，也是為孩子示範一個很厲害的人際互動方式喔!</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab5\" class=\"tab-pane\" id=\"medical1-tab5-content\" mbr-if=\"bootstrapTabs > 4\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/s-45342724.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">\n                                    分享一個大好消息給各位！ </h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">🎉分享給各位一個好消息～大受歡迎的正念團體再次開課啦！\n<br>\n<br>您是否經常關注他人的需要，卻忘了照顧自己的身心呢？或是生活中經常感到煩躁與無助，卻不知道壓力從何而來？\n<br> \n<br>✨那麼歡迎加入我們的正念紓壓課程\n<br>✨給自己四週的時間，和心理師一起聆聽內在的聲音，好好關照身體及大腦長期以來的需求，透過覺察及紓壓技巧的練習，找回身心的平靜與安穩\n<br> \n<br>❤️課程日期：\n<br>10/7、10/14、\n<br>10/21、10/28\n<br>\n<br>💛招募對象：\n<br>近期或長期出現焦慮、憂鬱、慢性壓力、疼痛等身心不適，欲學習情緒調節與紓壓技巧之成年民眾\n<br>\n<br>💚招生人數：\n<br>4人/一梯次\n<br> \n<br>💙報名連結：\n<br><a href=\"https://forms.gle/cwbFVBK2LyTMFUo87\" class=\"text-primary\">https://forms.gle/cwbFVBK2LyTMFUo87</a></p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab6\" class=\"tab-pane\" id=\"medical1-tab6-content\" mbr-if=\"bootstrapTabs > 5\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/-5.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">\n                                    中秋連假休診公告</h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">中秋連假治療所營業時間如下：\n<br>\n<br>9/09 (五) 全日正常看診\n<br>\n<br>9/10 (六) 全日休診\n<br>\n<br>9/11 (日) 全日休診\n<br>\n<br>9/12 (一) 全日正常看診\n<br>\n<br>\n<br>祝各位能有個美好的中秋連假 ♥\n<br>\n<br>趁著連假的時候好好放鬆身心吧~</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisaligфывn</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"tabs1 tabs medicalm4_tabs1\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" group=\"Tabs\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n    <mbr-parameters>\n        <input inline max=\"9\" min=\"0\" name=\"paddingTop\" step=\"1\" title=\"Top\" type=\"range\" value=\"3\">\n        <input inline max=\"9\" min=\"0\" name=\"paddingBottom\" step=\"1\" title=\"Bottom\" type=\"range\" value=\"3\">\n\n        <header>Show/Hide</header>\n        <input checked name=\"showTitle\" title=\"Title\" type=\"checkbox\">\n        <input checked name=\"showSubtitle\" title=\"Subtitle\" type=\"checkbox\">\n        <header>Tab</header>\n        <input name=\"showTabTitle\" title=\"Title\" type=\"checkbox\" checked>\n        <input name=\"showTabText\" title=\"Text\" type=\"checkbox\" checked>\n        <input name=\"showList\" title=\"List\" type=\"checkbox\">\n        <input condition=\"showList\" name=\"showCounter\" title=\"List Icon\" type=\"checkbox\" checked>\n        <header>Color</header>\n        <input condition=\"showCounter&&showList\" name=\"counterColor\" title=\"List Icon\" type=\"color\" value=\"#4f87fb\">\n        <input name=\"tabsColor\" title=\"Tabs\" type=\"color\" value=\"#4f5b77\">\n        <input name=\"activeTabColor\" title=\"Active Tab\" type=\"color\" value=\"#f6bd60\">\n        <header>Amount</header>\n        <select name=\"bootstrapTabs\" title=\"Tabs Count\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <header>Background</header>\n        <fieldset name=\"bg\" parallax type=\"background\">\n            <input parallax title=\"Image\" type=\"image\" value=\"../_images/background1.jpg\">\n            <input selected title=\"Color\" type=\"color\" value=\"#f7ede2\">\n            <input title=\"Video\" type=\"video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input checked condition=\"bg.type !== 'color'\" name=\"overlay\" title=\"Overlay\" type=\"checkbox\">\n        <input condition=\"overlay && bg.type !== 'color'\" name=\"overlayColor\" title=\"Overlay Color\" type=\"color\" value=\"#ffffff\">\n        <input condition=\"overlay && bg.type !== 'color'\" inline max=\"1\" min=\"0\" name=\"overlayOpacity\" step=\"0.1\" title=\"Opacity\" type=\"range\" value=\"0.6\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n    <div class=\"container\">\n        <div class=\"top-part\">\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style align-center mbr-bold\" data-app-selector=\".top-part .mbr-section-subtitle\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">NEWS</h3>\n\n            <h1 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".top-part .mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">\n                最新消息 </h1>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-12 col-md-12\">\n                <ul class=\"nav nav-tabs\" role=\"tablist\">\n                    <li role=\"presentation\" class=\"nav-item first\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab1-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style show active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab0\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-clock mbr-iconfont mbr-iconfont-btn\"></span>為什麼半夜不該看時間？</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 1\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab2-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab1\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-home mbr-iconfont mbr-iconfont-btn\"></span>家暴法的涵蓋對象只有家庭成員嗎？</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 2\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab3-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab2\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-hearth mbr-iconfont mbr-iconfont-btn\"></span>防疫優秀小尖兵!~</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 3\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab4-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab3\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-change-style mbr-iconfont mbr-iconfont-btn\"></span>兒童情緒人際團體開班</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 4\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab5-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab4\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-github mbr-iconfont mbr-iconfont-btn\"></span>正念人際團體</a></li>\n                    <li role=\"presentation\" class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 5\" mbr-theme-style=\"display-7\"><a aria-controls=\"medical1-tab6-content\" aria-selected=\"true\" class=\"nav-link mbr-fonts-style active\" data-app-placeholder=\"Type Text\" data-toggle=\"tab\" href=\"#最新消息_tab5\" role=\"tab\"><span class=\"mobi-mbri mobi-mbri-smile-face mbr-iconfont mbr-iconfont-btn\"></span>\n                            中秋連假休診公告</a></li>\n                </ul>\n                <div class=\"tab-content\">\n                    <div aria-labelledby=\"medical1-tab1\" class=\"tab-pane active\" id=\"medical1-tab1-content\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/265615493-423108279541908-664096898789282774-n.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">為什麼半夜不該看時間？</h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">通常，你會在什麼時候看時間呢？\n<br>是為了確認現在的時間？\n<br>是為了估算下個行程的空檔？\n<br>是為了調整目前工作的執行進度？\n<br>或是一種不自覺的習慣呢？\n<br>那麼，不時會在深夜查看時間的你，在想些什麼呢？\n<br>心理學有個概念叫「古典制約(classical conditioning)」，\n<br>就是那隻鼎鼎大名，會盯著鈴鐺聲流口水的狗狗。\n<br>起初，喜歡吃肉的狗狗，對於鈴鐺一點反應都沒有，\n<br>在牠的世界裡，那就只是一種聲音。\n<br>後來主人開始在每次用餐前，都會先搖上幾秒鐘的鈴鐺，\n<br>聲響結束後，狗狗的餐碗裡就會擺滿美味的食物。\n<br>久而久之，鈴鐺聲似乎變成一種提醒，知道這是將要開飯的好消息。\n<br>原本沒有什麼特別意義的鈴鐺聲，變成一種有意義的訊號和連結。\n<br>再次聽到鈴聲後，狗狗開始不自覺流下口水。\n<br>時間，是一種強而有力的訊號，告訴我們很多的「該」與「不該」。\n<br>這些提示出現後，通常會伴隨強烈的生心理反應，\n<br>例如：倒抽一口氣、心跳加速、冒冷汗、期待、興奮、煩躁、焦慮、緊張……\n<br>注意到了嗎？不論是哪種反應，大多會是短時間內的強烈反應，\n<br>讓人體的神經系統、內分泌系統和思緒瞬間變得清醒，做足高速運轉的準備。\n<br>對於大部分的人來說，「時間」等於「預做準備」的制約連結就是這樣建立的。\n<br>在白天，查看時間可能會為你帶來滿滿的工作活力和效率，\n<br>但是到了夜晚，這瞬間的清醒可能會造成睡眠的中斷，\n<br>讓你好不容易醞釀起來的睡意煙。消。雲。散！\n<br>一個不經意的查看時間，就會把「必須預作準備」的感覺帶進夜裡，\n<br>打亂好好休息的平靜。\n<br>如果時間制約已經形成，又希望能維持良好睡眠的話該怎麼辦呢？\n<br>幾個小動作，其實就能替你守住睡眠界線，讓你在深夜時分沖淡時間制約的影響。\n<br>例如：將手機調整成靜音，關掉部分通知(如信件、社群軟體、遊戲、投資消息、新聞等)，\n<br>替必須起床的時間設下幾個鬧鐘。\n<br>最重要的是，將手機、手錶、鬧鐘、時鐘等時間指示物，放在床邊無法一眼看到的位置。\n<br>一開始的嘗試可能會讓人很焦慮，這可能是擔心錯過的不習慣。\n<br>或許某些通知和時間點的提示，其實並不一定這麼緊急，\n<br>至少，在這段屬於你睡眠的時候是的。\n<br>習慣在生活中好努力的你，當然會對於時間感覺重視與在意。\n<br>試著暫時放下時間吧！努力後的疲憊，值得一夜的輕鬆和愜意。</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab2\" class=\"tab-pane\" id=\"medical1-tab2-content\" mbr-if=\"bootstrapTabs > 1\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/257777391-5452978528064809-8229265796035212194-n.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">\n                                    家暴法的涵蓋對象只有家庭成員嗎？ </h2>\n                                 <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">法律已擴大保護範圍，除了家庭成員，還包括：\n<br>1. 現有或曾有同居關係\n<br>2.現有或曾有親密關係之未同居伴侶。當中所稱親密關係伴侶，指雙方以情感或性行為為基礎，發展親密之社會互動關係。\n<br>在關係當中如何避免遭受暴力對待呢？\n<br>【摘錄】\n<br>文//王守珍臨床心理師\n<br>　　全文出自【自由評論網】，經作者同意後轉載。\n<br>高嘉瑜立委受林秉樞凌虐，臉部幾乎不成形的照片登出後，全台嘩然，「恐怖情人」再度成為社會熱烈討論的議題。\n<br>在交友過程中，如何避免自己成為家暴的受害者？如何預防自己步入類似的困境？恐怖情人可能具備下列性格特質：\n<br>😈 被動攻擊的特性。表面上是配合、殷勤討好，但骨子裡具攻擊性。事情不如他的期待時，會採取攻擊的特性。\n<br>😈 反社會性格。表面酷酷有禮，但行事強勢且衝動，不會顧及他人的感受，沒有道德感、沒有罪惡感，而且不遵守法律。\n<br>😈 戲劇化或自戀性。表面千情萬種，其實凡事都要以他為中心。</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab3\" class=\"tab-pane\" id=\"medical1-tab3-content\" mbr-if=\"bootstrapTabs > 2\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/3.png\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">防疫優秀小尖兵!~<br></h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">近日本土疫情持續，本所設有以下設備，竭盡守護您的健康\n<br><br>1. 諮商空間裝設透明帷幕，減少飛沫傳染機會。<br>2. 設置飛利浦紫外光殺菌燈、空氣清淨機、水神殺菌霧化機，並每日定時次氯酸水消毒環境。\n<br>3. 廠商定期進行全院消毒，保障你我健康。<br>4. 本所*心理諮商*提供以下服務：\n<br>免費提供個案防護面罩，空間中設有透明隔板，讓您諮商更安心。\n<br><br>若您仍擔心疫情，我們亦提供「線上諮商服務」：\n<br>a.可至本所官網上填寫資料申請線上諮商，將由專人與您聯繫。（參閱連結：https://www.lovesleep169.com.tw/page8.html）\n<br>b.原有諮商個案，若列入居家隔離者或因疫情緊張等因素，可於門診時間來電，協助您安排調整使用線上諮商模式。<br>\n<br>嚴峻疫情中，天母愛舒眠心理治療所與您攜手度過～\n<br>電話☎️：02-28227660\n<br>官網🔗：https://www.lovesleep169.com.tw/index.html<br>\n<br>（各項服務本所保留解釋權，且依中央疫情指揮中心、衛生局、及健保署相關規定辦理，若有調整，不另行通知）<br>\n<br></p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab4\" class=\"tab-pane\" id=\"medical1-tab4-content\" mbr-if=\"bootstrapTabs > 3\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/s-46874627.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">分享一個大好消息給各位！</h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">那就是兒童情緒人際團體秋季班開始招生啦😆\n<br>\n<br>如果您覺得孩子愛發脾氣、小霸王特質、想交朋友但有困難、很多固執的想法和習慣...等等，那麼這課程就來的正是時候了！課程將由專業的臨床心理師陪伴孩子戰勝情緒和交友大魔王!\n<br>\n<br>招生對象：\n<br>國小及幼兒園的孩子\n<br>招生人數：\n<br>3-5位孩子/一個班\n<br>課程時間：\n<br>周一晚上(國小)\n<br>周四下午(幼兒園)\n<br>\n<br>名額有限，歡迎有興趣的家長手刀填寫網路表單，來預約團體前諮詢的時間唷😘\n<br>\n<br>偷偷跟各位說...如果有想要參加團體但時間沒辦法配合的狀況，也可以在表單中許願別的時段唷🥹🥹\n<br>\n<br>報名連結：<a href=\"https://reurl.cc/dWy7Zg\" class=\"text-primary\">https://reurl.cc/dWy7Zg</a>\n<br>-------------------------\n<br>分享一個小故事：\n<br>面對孩子喜歡講不好聽的話應該怎麼辦呢？\n<br>幽默應對是一個不錯的方法唷🫶🏻\n<br>曾經有孩子分享他跟同學的對話如下\n<br>同學：你八七喔!\n<br>孩子：五十六~八八~六十四~\n<br>同學：八九~七十二~\n<br>我們面對孩子口出穢言總是好生氣、急著想修正\n<br>但有時候展現如何化穢言為幽默，也是為孩子示範一個很厲害的人際互動方式喔!</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab5\" class=\"tab-pane\" id=\"medical1-tab5-content\" mbr-if=\"bootstrapTabs > 4\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/s-45342724.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">\n                                    分享一個大好消息給各位！ </h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">🎉分享給各位一個好消息～大受歡迎的正念團體再次開課啦！\n<br>\n<br>您是否經常關注他人的需要，卻忘了照顧自己的身心呢？或是生活中經常感到煩躁與無助，卻不知道壓力從何而來？\n<br> \n<br>✨那麼歡迎加入我們的正念紓壓課程\n<br>✨給自己四週的時間，和心理師一起聆聽內在的聲音，好好關照身體及大腦長期以來的需求，透過覺察及紓壓技巧的練習，找回身心的平靜與安穩\n<br> \n<br>❤️課程日期：\n<br>10/7、10/14、\n<br>10/21、10/28\n<br>\n<br>💛招募對象：\n<br>近期或長期出現焦慮、憂鬱、慢性壓力、疼痛等身心不適，欲學習情緒調節與紓壓技巧之成年民眾\n<br>\n<br>💚招生人數：\n<br>4人/一梯次\n<br> \n<br>💙報名連結：\n<br><a href=\"https://forms.gle/cwbFVBK2LyTMFUo87\" class=\"text-primary\">https://forms.gle/cwbFVBK2LyTMFUo87</a></p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisalign</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div aria-labelledby=\"medical1-tab6\" class=\"tab-pane\" id=\"medical1-tab6-content\" mbr-if=\"bootstrapTabs > 5\" role=\"tabpanel\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6\">\n                                <img src=\"@PROJECT_PATH@/assets/images/-5.jpg\" alt>\n                            </div>\n                            <div class=\"col-md-6\">\n                                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" data-app-selector=\".tab-content .tab-pane .mbr-section-title, .mbr-list\" mbr-if=\"showTabTitle\" mbr-theme-style=\"display-5\">\n                                    中秋連假休診公告</h2>\n                                <p class=\"mbr-text pt-4 mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-text, .mbr-list\" mbr-if=\"showTabText\" mbr-theme-style=\"display-7\">中秋連假治療所營業時間如下：\n<br>\n<br>9/09 (五) 全日正常看診\n<br>\n<br>9/10 (六) 全日休診\n<br>\n<br>9/11 (日) 全日休診\n<br>\n<br>9/12 (一) 全日正常看診\n<br>\n<br>\n<br>祝各位能有個美好的中秋連假 ♥\n<br>\n<br>趁著連假的時候好好放鬆身心吧~</p>\n                                <div class=\"mbr-list mbr-fonts-style\" data-app-selector=\".tab-content .tab-pane .mbr-list .list\" data-multiline mbr-article mbr-if=\"showList\" mbr-theme-style=\"display-4\">\n                                    <ul class=\"list\" mbr-if=\"showList\">\n                                        <li>Invisaligфывn</li>\n                                        <li>Implants</li>\n                                        <li>Dental Crowns</li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sRc0CEjkly",
           "_anchor": "最新消息",
           "_PHPplaceholders": [],
@@ -17401,6 +17403,1312 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
+        }
+      ]
+    },
+    "page11.html": {
+      "settings": {
+        "title": "心理健康資源",
+        "order": 11,
+        "meta_descr": "位於治療所附近的醫療資源"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@sticky)": {
+              ".navbar-dropdown": {
+                "position": "relative !important"
+              },
+              "& when (@transparent)": {
+                ".navbar-dropdown": {
+                  "position": "absolute !important"
+                }
+              }
+            },
+            "& when (@sticky)": {
+              "z-index": "1000",
+              "width": "100%",
+              "& when not (@transparent)": {
+                "position": "relative",
+                "min-height": "60px"
+              },
+              "nav.navbar": {
+                "position": "fixed"
+              }
+            },
+            ".wrapper": {
+              "justify-content": "space-between",
+              "padding": "0 6rem",
+              "@media (max-width: 991px)": {
+                "padding": "0"
+              }
+            },
+            ".btn": {
+              "border-radius": "30px"
+            },
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "\"\\e966\"",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-menu": {
+              "padding": "0",
+              "border-radius": "4px",
+              "box-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
+            },
+            ".dropdown-item": {
+              "border-bottom": "1px solid #e6e6e6",
+              "&:hover, &:focus": {
+                "background": "@primaryColor !important",
+                "color": "white !important"
+              },
+              "&:first-child": {
+                "border-top-left-radius": "4px",
+                "border-top-right-radius": "4px"
+              },
+              "&:last-child": {
+                "border-bottom": "none",
+                "border-bottom-left-radius": "4px",
+                "border-bottom-right-radius": "4px"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": "0.667em .3em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".nav-link": {
+              "position": "relative"
+            },
+            ".iconfont-wrapper": {
+              "color": "@iconsColor !important",
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".navbar-caption": {},
+            ".navbar-nav": {},
+            ".dropdown-menu, .navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-right": "0.5rem",
+                "vertical-align": "sub",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "70px",
+              "transition": "all 0.3s",
+              "border-bottom": "1px solid transparent",
+              "&:not(.navbar-short)": {},
+              "& when not (@transparent)": {
+                "box-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
+                "background": "@menuBgColor"
+              },
+              "& when (@transparent)": {
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity)"
+              },
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1"
+              },
+              "&.collapsed": {
+                "justify-content": "center",
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "41%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "40%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem"
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "2.5rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "min-height": "60px",
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "min-height": "70px",
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "10px 0",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "170px"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "align-self": "center",
+              "order": "0",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0 .5rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": ".5rem",
+              "padding-right": ".5rem",
+              "padding-top": "0.3rem",
+              "text-align": "center"
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "70px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~\"+\" 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_sourceTheme": "masterclassm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"menu menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3\" max=\"8\" step=\"0.1\" value=\"3\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\" checked>\n        <select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n        <header>Styles</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\" checked>\n        <input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"transparent\">\n        <input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#84a59d\">\n        <input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n        <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"wrapper d-flex w-100 flex-wrap\">\n                <div class=\"navbar-brand\">\n                    <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                        <a href=\"index.html\">\n                            <img src=\"@PROJECT_PATH@/assets/images/logo.svg\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                        </a>\n                    </span>\n                    <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont\"><a class=\"navbar-caption text-white text-primary\" data-app-selector=\".navbar-caption\" href=\"index.html\" data-app-placeholder=\"Type Text\">天母愛舒眠</a></span>\n                </div>\n                <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showIcons || showButtons\">\n                    <div class=\"hamburger\">\n                        <span></span>\n                        <span></span>\n                        <span></span>\n                        <span></span>\n                    </div>\n                </button>\n                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" mbr-if=\"showItems || showIcons || showButtons\">\n                    <ul mbr-menu class=\"navbar-nav nav-dropdown text-uppercase\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">關於我們</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item text-primary\" href=\"page1.html#認識天母愛舒眠\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">認識天母愛舒眠</a><a class=\"text-white dropdown-item text-primary\" href=\"page1.html#form3-c0\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">聯絡我們</a><a class=\"text-white dropdown-item text-primary\" href=\"page1.html#交通資訊\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">交通資訊</a><a class=\"text-white dropdown-item text-primary\" href=\"page1.html#收費標準\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">收費標準</a><a class=\"text-white dropdown-item text-primary\" href=\"page1.html#收費方式\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">收費方式</a></div></li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">預約服務</a><div class=\"dropdown-menu\"><div class=\"dropdown\"><a class=\"text-white dropdown-item dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">心理諮商</a><div class=\"dropdown-menu dropdown-submenu\"><a class=\"text-white dropdown-item text-primary\" href=\"page8.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">心理諮商 (現場)</a><a class=\"text-white dropdown-item text-primary\" href=\"page8.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">心理諮商 (網路)</a><a class=\"text-white dropdown-item text-primary\" href=\"page8.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">EMDR眼動減敏與歷程更新治療</a><a class=\"text-white dropdown-item text-primary\" href=\"page8.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">生理回饋治療</a></div></div><a class=\"text-white dropdown-item text-primary\" href=\"page9.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">心理衡鑑評估</a><a class=\"text-white dropdown-item text-primary\" href=\"page10.html\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">睡眠評估與治療</a></div></li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">天母愛舒眠團隊</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item text-primary\" href=\"page2.html#header5-71\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">成人專科</a><a class=\"text-white dropdown-item text-primary\" href=\"page2.html#兒青專科\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">兒青專科</a><a class=\"text-white dropdown-item text-primary\" href=\"page2.html#睡眠專科\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">睡眠專科</a></div></li>\n                        <li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">睡眠專業</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item text-primary\" href=\"page3.html#header5-74\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">睡眠檢查</a><a class=\"text-white dropdown-item text-primary\" href=\"page3.html#睡眠治療\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">睡眠治療</a><a class=\"text-white dropdown-item text-primary\" href=\"page3.html#預約流程\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">預約流程</a></div></li>\n                        <li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">特色治療</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item text-primary\" href=\"page4.html#header5-7o\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">EMDR眼動減敏與歷程更新治療</a><a class=\"text-white dropdown-item text-primary\" href=\"page4.html#生理回饋治療\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">生理回饋治療</a></div>\n                        </li>\n                        <li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">心理諮商服務</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item text-primary\" href=\"page5.html#header5-7w\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">心理諮商(現場)</a><a class=\"text-white dropdown-item text-primary\" href=\"page5.html#預約流程\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">現場諮商流程</a><a class=\"text-white dropdown-item text-primary\" href=\"page6.html#header5-9y\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">心理諮商(網路)</a><a class=\"text-white dropdown-item text-primary\" href=\"page6.html#預約流程(網路)\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">通訊諮商流程</a></div>\n                        </li><li class=\"nav-item dropdown\"><a class=\"nav-link link text-white dropdown-toggle\" href=\"#\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\" data-toggle=\"dropdown-submenu\">心理衡鑑評估</a><div class=\"dropdown-menu\"><a class=\"text-white dropdown-item text-primary\" href=\"page7.html#header5-7y\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">兒童/青少年</a><a class=\"text-white dropdown-item text-primary\" href=\"page7.html#成人\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">成人</a></div></li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"index.html#最新消息\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">最新消息</a></li></ul>\n                    <div class=\"icons-menu\" mbr-if=\"showIcons\">\n                        <a class=\"iconfont-wrapper\" href=\"https://www.facebook.com/lovesleep169/\" target=\"_blank\">\n                            <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper\" href=\"https://page.line.me/?accountId=106rfmlb\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                            <span mbr-icon class=\"p-2 mbr-iconfont socicon-line socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                            <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </div>\n                    <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-white-outline\" href=\"tel:  02-2823-5600\" data-app-placeholder=\"Type Text\">02-28235600</a></div>\n                </div>\n            </div>\n\n        </div>\n    </nav>\n</section>",
+          "_cid": "sTNphz1OGI",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_anchor": "menu1-cz",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#4f87fb",
+              "font-weight": "700",
+              "line-height": "1.43",
+              "letter-spacing": "2px",
+              "& when (@showFrame)": {
+                "background-color": "@primaryColor",
+                "padding": "5px 14px",
+                "color": "#ffffff",
+                "display": "table"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#130947",
+              "font-weight": "900",
+              ".accent-word": {
+                "color": "#4f87fb"
+              }
+            },
+            ".mbr-text": {
+              "color": "#6d7a8c"
+            },
+            ".content-link": {
+              "display": "flex",
+              "-webkit-box-pack": "justify",
+              "justify-content": "space-between",
+              "-webkit-box-align": "center",
+              "align-items": "center",
+              "color": "#130947",
+              "span": {
+                "margin-right": "15px",
+                "margin-left": "20px",
+                "padding": "13px",
+                "border-radius": "100%",
+                "color": "#4f87fb",
+                "background-color": "#ffffff",
+                "font-size": "2.275rem"
+              }
+            },
+            ".separator": {
+              "margin-top": "-15px",
+              "margin-left": "0",
+              "margin-right": "auto",
+              "width": "100%",
+              ".sep-holder": {
+                "height": "1px",
+                "position": "relative",
+                "-webkit-box-flex": "1",
+                "flex": "1 1 auto",
+                "width": "(@lineWidth * 1%)",
+                ".sep-line": {
+                  "border-color": "@lineColor !important",
+                  "border-top-width": "5px",
+                  "height": "1px",
+                  "border-top": "5px solid @lineColor",
+                  "position": "relative",
+                  "top": "1px",
+                  "width": "(@lineWidth * 1%)"
+                }
+              }
+            },
+            ".mbr-section-btn": {
+              "display": "flex",
+              "flex-wrap": "wrap",
+              "margin-top": "47px",
+              ".btn": {
+                "border-radius": "4px",
+                "margin": "0.4rem 0.6rem 0.4rem 0 !important",
+                "padding": "15px 40px"
+              },
+              ".btn.display-4": {
+                "line-height": "2",
+                "letter-spacing": "1px",
+                "font-weight": "700",
+                "font-size": "13px"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".separator, .sep-holder, .sep-line": {
+                "display": "none !important"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".mbr-section-subtitle": {
+                "& when (@showFrame)": {
+                  "margin-left": "auto",
+                  "margin-right": "auto"
+                }
+              },
+              ".mbr-section-btn": {
+                "-webkit-box-pack": "center",
+                "justify-content": "center"
+              }
+            },
+            ".mbr-section-subtitle, .mbr-section-title .accent-word": {
+              "color": "#ff4a52"
+            },
+            ".mbr-section-title, .separator, .sep-holder": {
+              "color": "#ffffff",
+              "text-align": "left"
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"header1 medicalm4_header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n\t\t<select title=\"Buttons Position\" name=\"justify\">\n\t\t\t<option value=\"1\" selected>Left</option>\n\t\t\t<option value=\"2\">Center</option>\n\t\t\t<option value=\"3\">Right</option>\n\t\t</select>\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle Frame\" name=\"showFrame\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\">\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<input type=\"checkbox\" title=\"Line\" name=\"showLine\" condition=\"showTitle\">\n\t\t<input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#ffffff\" condition=\"showLine && showTitle\">\n\t\t<input type=\"range\" inline title=\"Line Width\" name=\"lineWidth\" min=\"0\" max=\"100\" step=\"1\" value=\"22\" condition=\"showLine && showTitle\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" value=\"@PROJECT_PATH@/assets/images/mbr.jpg\" title=\"Image\" selected>\n\t\t\t<input type=\"color\" value=\"#0087ab\" title=\"Color\">\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#d2d0d0\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container align-center\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-12\">\n\t\t\t\t<p class=\"mbr-section-subtitle mbr-bold align-left pb-1 mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-title .accent-word\">\n\t\t\t\t\tmental health</p>\n\t\t\t\t<h1 class=\"mbr-section-title align-left mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .separator, .sep-holder\">心理健康資源</h1>\n\t\t\t\t<div class=\"separator d-flex flex-row flex-nowrap\" mbr-if=\"showLine && showTitle\">\n\t\t\t\t\t<span class=\"sep-holder\" mbr-if=\"showLine && showTitle\">\n\t\t\t\t\t\t<span class=\"sep-line d-block\"></span>\n\t\t\t\t\t</span>\n\t\t\t\t</div>\n\t\t\t\t<p class=\"mbr-text align-left pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl elit, varius ut magna vel,\n\t\t\t\t\ttincidunt iaculis sem. Interdum\n\t\t\t\t\tet malesuada fames ac ante ipsum primis in faucibus.</p>\n\t\t\t\t<div class=\"mbr-section-btn align-left \" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-class=\"{'justify-content-start': justify == 1, 'justify-content-center': justify == 2, 'justify-content-end': justify == 3}\"><a class=\"content-link link mbr-bold\" href=\"https://mobiri.se\" data-app-selector=\".content-link\" data-app-placeholder=\"Type Text\"></a></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n\t\t<a href=\"#next\">\n\t\t\t<i class=\"mbri-arrow-down mbr-iconfont\"></i>\n\t\t</a>\n\t</div>\n</section>",
+          "_cid": "thu9uaZKl3",
+          "_anchor": "header1-d2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "table1",
+          "_sourceTheme": "agencym4",
+          "_customHTML": "<section class=\"section-table table1 agencym4_table1\" group=\"Tables\" plugins=\"dataTables\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"range\" inline title=\"Columns\" name=\"tableColumns\" min=\"1\" max=\"50\" step=\"1\" value=\"3\">\n\t\t<input type=\"range\" inline title=\"Rows\" name=\"tableRows\" min=\"1\" max=\"50\" step=\"1\" value=\"12\">\n\t\t<input type=\"color\" title=\"Table Border Color\" name=\"tbColor\" value=\"#cccccc\">\n\t\t<input type=\"checkbox\" title=\"Table Background\" name=\"tbBackground\">\n\t\t<input type=\"color\" title=\"Table Background Color\" name=\"tbBgColor\" value=\"#ffffff\" condition=\"tbBackground\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/agencym4/components/_images/background1.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=E0Pa8tYo94U\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/agencym4/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div class=\"container container-table\">\n\t\t<h2 class=\"mbr-section-title mbr-fonts-style align-center pb-3\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n\t\t\t鄰近社區心理健康醫療服務單位\n\t\t</h2>\n\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\tClick blue \"Gear\" icon in the top right corner to hide/show search and info, change the the table background\n\t\t\tand other parameters. In browser click on the table head to sort the table, use search to filter the table.\n\t\t</h3>\n\t\t<div class=\"table-wrapper\">\n\t\t\t<div class=\"container scroll\">\n\t\t\t\t<table class=\"table\" cellspacing=\"0\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr class=\"table-heads \" mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<th mbr-text class=\"head-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".head-item\">名稱</th>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<th mbr-text class=\"head-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".head-item\">地址</th><th mbr-text class=\"head-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".head-item\">電話</th></tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody mbr-list mbr-list-grow=\"tableRows\">\n\t\t\t\t\t\t<tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市立關渡醫院-委託臺北榮民總醫院經營</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區知行路225巷12號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2858-7000</td></tr>\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t<tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">醫療財團法人辜公亮基金會和信治癌中心醫院</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區立德路125號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2897-0011</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">振興醫療財團法人振興醫院</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區振興街45號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2826-4400</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北榮民總醫院</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區石牌路2段201號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2871-2121</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">三軍總醫院北投分院附設民眾診療服務處</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區新民路60號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2895-9808</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">天晴診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市士林區中山北路6段292號、292號2樓</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2835-5329</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">天母康健身心診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市士林區德行西路100號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2837-8787</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">自由想心理診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市士林區福華路122號2樓</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2831-4837</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">社子安心診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市士林區延平北路5段76號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2813-6622</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">石牌鄭身心醫學診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區石牌路1段69號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2822-9183</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">奇岩身心診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區中央南路1段191、193號</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2891-9008</td></tr><tr mbr-list mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">北辰身心醫學診所</td>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t<td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">臺北市北投區光明路2巷9之3號、9之3號2樓</td><td mbr-text class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".body-item\">(02)2892-5500</td></tr></tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".container-table": {
+              "margin": "0 auto"
+            },
+            ".scroll": {
+              "overflow-x": "auto",
+              "padding": "0"
+            },
+            ".dataTables_wrapper": {
+              "display": "block",
+              ".table": {
+                "overflow-x": "auto"
+              }
+            },
+            "table": {
+              "width": "100% !important",
+              "margin-top": "6px",
+              "margin-bottom": "0",
+              "th": {
+                "border-top": "1px solid @tbColor",
+                "transition": "all .2s",
+                "border-bottom": "none",
+                "&:hover": {
+                  "background": "@tbColor",
+                  "color": "contrast(@tbColor)"
+                }
+              },
+              "td": {
+                "border-top": "1px solid @tbColor",
+                "&:hover": {
+                  "color": "@primaryColor"
+                }
+              },
+              "tr:last-child td": {
+                "border-bottom": "1px solid @tbColor"
+              },
+              "&.table": {
+                "& when (@tbBackground)": {
+                  "background": "@tbBgColor"
+                }
+              }
+            },
+            ".dataTables_filter": {
+              "text-align": "right",
+              "margin-bottom": ".5rem",
+              "label": {
+                "display": "inline",
+                "white-space": "normal !important"
+              },
+              "input": {
+                "display": "inline",
+                "width": "auto",
+                "margin-left": ".5rem",
+                "border-radius": "100px",
+                "padding-left": "1rem"
+              }
+            },
+            ".dataTables_info": {
+              "padding-bottom": "1rem",
+              "padding-top": "1rem",
+              "white-space": "normal !important"
+            },
+            "@media (max-width: 992px)": {
+              ".dataTables_filter": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 350px)": {
+              ".dataTables_filter": {
+                "text-align": "center",
+                "input": {
+                  "width": "100% !important",
+                  "margin-left": "0 !important"
+                }
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".body-item": {
+              "text-align": "left"
+            }
+          },
+          "_cid": "thuiL8HblB",
+          "_anchor": "table1-d6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "table1",
+          "_sourceTheme": "educationm4",
+          "_customHTML": "<section class=\"section-table table1 educationm4_table1\" group=\"Tables\" plugins=\"dataTables\"\n\tdata-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Columns\" name=\"tableColumns\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Rows\" name=\"tableRows\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMaintitle\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showMainsubtitle\" />\n\t\t<input type=\"checkbox\" title=\"Table Background\" name=\"tbBackground\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Search\" name=\"isSearch\" />\n\t\t<input type=\"text\" title=\"Text Empty\" name=\"textEmpty\" condition=\"isSearch\" value=\"No matching records found\" />\n\t\t<header>Colors</header>\n\t\t<input type=\"color\" title=\"Line\" name=\"lineColor\" value=\"#0a1c44\" condition=\"showMaintitle\" />\n\t\t<input type=\"color\" title=\"Table Head\" name=\"thColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Head Border\" name=\"brColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Border\" name=\"tbColor\" value=\"#e9e9e9\" />\n\t\t<input type=\"color\" title=\"Table Background\" name=\"tbBgColor\" value=\"#ffffff\" condition=\"tbBackground\" />\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" value=\"@ADDONS_PATH@/educationm4/components/_images/background1.jpg\" title=\"Image\" />\n\t\t\t<input type=\"color\" value=\"#ffffff\" title=\"Color\" selected=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\" />\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#232323\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\"\n\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div class=\"container container-table\">\n\t\t<h2 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-2\"\n\t\t\tmbr-if=\"showMaintitle\" data-app-selector=\".mbr-section-title, .line-wrap\">\n\t\t\tStudents Table\n\t\t</h2>\n\t\t<div class=\"line-wrap\" mbr-if=\"showMaintitle\">\n\t\t\t<div class=\"line\"></div>\n\t\t</div>\n\n\t\t<h3 class=\"mbr-section-sub-title pb-4 mbr-normal mbr-fonts-style align-left\" mbr-theme-style=\"display-4\"\n\t\t\tmbr-if=\"showMainsubtitle\" data-app-selector=\".mbr-section-sub-title\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi non arcu rutrum molestie.\n\t\t</h3>\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-lg-9 col-md-12\">\n\t\t\t\t<div class=\"table-wrapper\">\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<div class=\"row search\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_filter\">\n\t\t\t\t\t\t\t\t\t<label mbr-text=\"\" class=\"searchInfo mbr-fonts-style\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-7\">Search:</label>\n\t\t\t\t\t\t\t\t\t<input class=\"form-control input-sm\" disabled=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"container scroll\">\n\t\t\t\t\t\t<table class=\"table\" mbr-class=\"{'isSearch':isSearch}\" cellspacing=\"0\"\n\t\t\t\t\t\t\tdata-empty=\"{{textEmpty}}\">\n\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t<tr class=\"table-heads\" mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\t#\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tAge\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tUsername\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</thead>\n\n\t\t\t\t\t\t\t<tbody mbr-list=\"\" mbr-list-grow=\"tableRows\">\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t1\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tJeanna Schmal\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@jenna\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t2\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tCaren Rials\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@caren\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t3\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tLeon Rogol\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@leon\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t4\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tShala Barrera\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@shala\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"container table-info-container\">\n\t\t\t\t\t\t<div class=\"row info\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_info mbr-fonts-style\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">Showing</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoAfter\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">entries</span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">(filtered from</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredAfter\" data-app-selector=\".dataTables_info\">\n\t\t\t\t\t\t\t\t\t\ttotal entries)</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".container-table": {
+              "margin": "0 auto"
+            },
+            "table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after": {
+              "bottom": "20px !important"
+            },
+            ".line-wrap": {
+              "display": "inline-block",
+              "width": "100%"
+            },
+            ".form-control": {
+              "min-height": "2.5em",
+              "padding": "0.5em 0.5em"
+            },
+            ".line": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "4px",
+              "background-color": "@lineColor",
+              "margin-top": "0.5rem",
+              "margin-bottom": "2rem"
+            },
+            ".scroll": {
+              "overflow-x": "auto",
+              "padding": "0"
+            },
+            ".head-item": {
+              "padding-top": "1.2rem",
+              "padding-bottom": "1.2rem",
+              "background": "@thColor",
+              "border-bottom": "1px solid @brColor",
+              "&:hover": {
+                "background": "@thColor",
+                "color": "inherit"
+              }
+            },
+            ".table-heads": {
+              "color": "#ffffff"
+            },
+            ".dataTables_wrapper": {
+              "display": "block",
+              ".search": {
+                "margin-bottom": "0.5rem"
+              },
+              ".table": {
+                "overflow-x": "auto"
+              }
+            },
+            "table": {
+              "width": "100% !important",
+              "margin-top": "6px",
+              "border-bottom": "1px solid @tbColor",
+              "margin-bottom": "0",
+              "td, th": {
+                "white-space": "nowrap"
+              },
+              "th": {
+                "border-top": "none",
+                "transition": "all 0.2s",
+                "border-bottom": "none",
+                "&:hover": {
+                  "background": "@tbColor",
+                  "color": "contrast(@tbColor)"
+                }
+              },
+              "td": {
+                "border-top": "1px solid @tbColor"
+              },
+              "&.table": {
+                "& when (@tbBackground)": {
+                  "background": "@tbBgColor"
+                }
+              }
+            },
+            ".dataTables_filter": {
+              "text-align": "right",
+              "margin-bottom": "0.5rem",
+              "label": {
+                "display": "inline",
+                "white-space": "normal !important"
+              },
+              "input": {
+                "display": "inline",
+                "width": "auto",
+                "margin-left": "0.5rem",
+                "border-radius": "100px",
+                "padding-left": "1rem"
+              }
+            },
+            ".dataTables_info": {
+              "padding-bottom": "1rem",
+              "padding-top": "1rem",
+              "white-space": "normal !important"
+            },
+            "@media (max-width: 992px)": {
+              ".dataTables_filter": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 350px)": {
+              ".dataTables_filter": {
+                "text-align": "center",
+                "input": {
+                  "width": "100% !important",
+                  "margin-left": "0 !important"
+                }
+              }
+            },
+            ".mbr-section-title, .line-wrap": {
+              "text-align": "center"
+            },
+            ".mbr-section-sub-title": {
+              "text-align": "center",
+              "color": "#656565"
+            }
+          },
+          "_cid": "thuhPIgiV8"
+        },
+        {
+          "_name": "table1",
+          "_sourceTheme": "educationm4",
+          "_customHTML": "<section class=\"section-table table1 educationm4_table1\" group=\"Tables\" plugins=\"dataTables\"\n\tdata-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Columns\" name=\"tableColumns\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Rows\" name=\"tableRows\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMaintitle\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showMainsubtitle\" />\n\t\t<input type=\"checkbox\" title=\"Table Background\" name=\"tbBackground\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Search\" name=\"isSearch\" />\n\t\t<input type=\"text\" title=\"Text Empty\" name=\"textEmpty\" condition=\"isSearch\" value=\"No matching records found\" />\n\t\t<header>Colors</header>\n\t\t<input type=\"color\" title=\"Line\" name=\"lineColor\" value=\"#0a1c44\" condition=\"showMaintitle\" />\n\t\t<input type=\"color\" title=\"Table Head\" name=\"thColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Head Border\" name=\"brColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Border\" name=\"tbColor\" value=\"#e9e9e9\" />\n\t\t<input type=\"color\" title=\"Table Background\" name=\"tbBgColor\" value=\"#ffffff\" condition=\"tbBackground\" />\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" value=\"@ADDONS_PATH@/educationm4/components/_images/background1.jpg\" title=\"Image\" />\n\t\t\t<input type=\"color\" value=\"#ffffff\" title=\"Color\" selected=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\" />\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#232323\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\"\n\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div class=\"container container-table\">\n\t\t<h2 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-2\"\n\t\t\tmbr-if=\"showMaintitle\" data-app-selector=\".mbr-section-title, .line-wrap\">\n\t\t\tStudents Table\n\t\t</h2>\n\t\t<div class=\"line-wrap\" mbr-if=\"showMaintitle\">\n\t\t\t<div class=\"line\"></div>\n\t\t</div>\n\n\t\t<h3 class=\"mbr-section-sub-title pb-4 mbr-normal mbr-fonts-style align-left\" mbr-theme-style=\"display-4\"\n\t\t\tmbr-if=\"showMainsubtitle\" data-app-selector=\".mbr-section-sub-title\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi non arcu rutrum molestie.\n\t\t</h3>\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-lg-9 col-md-12\">\n\t\t\t\t<div class=\"table-wrapper\">\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<div class=\"row search\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_filter\">\n\t\t\t\t\t\t\t\t\t<label mbr-text=\"\" class=\"searchInfo mbr-fonts-style\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-7\">Search:</label>\n\t\t\t\t\t\t\t\t\t<input class=\"form-control input-sm\" disabled=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"container scroll\">\n\t\t\t\t\t\t<table class=\"table\" mbr-class=\"{'isSearch':isSearch}\" cellspacing=\"0\"\n\t\t\t\t\t\t\tdata-empty=\"{{textEmpty}}\">\n\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t<tr class=\"table-heads\" mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\t#\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tAge\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tUsername\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</thead>\n\n\t\t\t\t\t\t\t<tbody mbr-list=\"\" mbr-list-grow=\"tableRows\">\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t1\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tJeanna Schmal\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@jenna\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t2\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tCaren Rials\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@caren\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t3\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tLeon Rogol\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@leon\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t4\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tShala Barrera\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@shala\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"container table-info-container\">\n\t\t\t\t\t\t<div class=\"row info\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_info mbr-fonts-style\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">Showing</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoAfter\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">entries</span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">(filtered from</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredAfter\" data-app-selector=\".dataTables_info\">\n\t\t\t\t\t\t\t\t\t\ttotal entries)</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".container-table": {
+              "margin": "0 auto"
+            },
+            "table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after": {
+              "bottom": "20px !important"
+            },
+            ".line-wrap": {
+              "display": "inline-block",
+              "width": "100%"
+            },
+            ".form-control": {
+              "min-height": "2.5em",
+              "padding": "0.5em 0.5em"
+            },
+            ".line": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "4px",
+              "background-color": "@lineColor",
+              "margin-top": "0.5rem",
+              "margin-bottom": "2rem"
+            },
+            ".scroll": {
+              "overflow-x": "auto",
+              "padding": "0"
+            },
+            ".head-item": {
+              "padding-top": "1.2rem",
+              "padding-bottom": "1.2rem",
+              "background": "@thColor",
+              "border-bottom": "1px solid @brColor",
+              "&:hover": {
+                "background": "@thColor",
+                "color": "inherit"
+              }
+            },
+            ".table-heads": {
+              "color": "#ffffff"
+            },
+            ".dataTables_wrapper": {
+              "display": "block",
+              ".search": {
+                "margin-bottom": "0.5rem"
+              },
+              ".table": {
+                "overflow-x": "auto"
+              }
+            },
+            "table": {
+              "width": "100% !important",
+              "margin-top": "6px",
+              "border-bottom": "1px solid @tbColor",
+              "margin-bottom": "0",
+              "td, th": {
+                "white-space": "nowrap"
+              },
+              "th": {
+                "border-top": "none",
+                "transition": "all 0.2s",
+                "border-bottom": "none",
+                "&:hover": {
+                  "background": "@tbColor",
+                  "color": "contrast(@tbColor)"
+                }
+              },
+              "td": {
+                "border-top": "1px solid @tbColor"
+              },
+              "&.table": {
+                "& when (@tbBackground)": {
+                  "background": "@tbBgColor"
+                }
+              }
+            },
+            ".dataTables_filter": {
+              "text-align": "right",
+              "margin-bottom": "0.5rem",
+              "label": {
+                "display": "inline",
+                "white-space": "normal !important"
+              },
+              "input": {
+                "display": "inline",
+                "width": "auto",
+                "margin-left": "0.5rem",
+                "border-radius": "100px",
+                "padding-left": "1rem"
+              }
+            },
+            ".dataTables_info": {
+              "padding-bottom": "1rem",
+              "padding-top": "1rem",
+              "white-space": "normal !important"
+            },
+            "@media (max-width: 992px)": {
+              ".dataTables_filter": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 350px)": {
+              ".dataTables_filter": {
+                "text-align": "center",
+                "input": {
+                  "width": "100% !important",
+                  "margin-left": "0 !important"
+                }
+              }
+            },
+            ".mbr-section-title, .line-wrap": {
+              "text-align": "center"
+            },
+            ".mbr-section-sub-title": {
+              "text-align": "center",
+              "color": "#656565"
+            }
+          },
+          "_cid": "thuhR0JhjA"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "justify-content": "space-between",
+              "align-items": "center",
+              "flex-wrap": "wrap",
+              "@media (max-width: 992px)": {
+                "flex-direction": "column",
+                "justify-content": "center",
+                "& .footer-item, & .mbr-social-likes, & .footer-logo": {
+                  "margin-bottom": "1.5rem"
+                }
+              },
+              "@media (max-width: 546px)": {
+                "& .mbr-social-likes": {
+                  "flex-wrap": "wrap",
+                  "justify-content": "center",
+                  "& .footer-item": {
+                    "margin-bottom": "1.5rem !important",
+                    "width": "100%",
+                    "text-align": "center",
+                    "justify-content": "center"
+                  },
+                  "& .iconfont-wrapper": {
+                    "margin-bottom": "1rem"
+                  }
+                }
+              }
+            },
+            ".row-copyright": {
+              "word-break": "break-word",
+              "width": "auto",
+              "min-width": "~\"calc(100% - (@{logoSize} * 1rem))\"",
+              "display": "inline-block"
+            },
+            ".mbr-social-likes": {
+              "display": "flex",
+              "align-items": "center",
+              "& a": {
+                "color": "@iconColor"
+              },
+              "& span": {
+                "display": "flex",
+                "align-items": "center",
+                "justify-content": "center",
+                "border-radius": "50%",
+                "border": "1px solid @iconColorBorder",
+                "width": "36px",
+                "height": "36px",
+                "margin-left": "0.4375rem",
+                "margin-right": "0.4375rem",
+                "transition": "0.3s ease-out",
+                "&:hover": {
+                  "border-color": "@iconColorHover",
+                  "color": "@iconColorHover"
+                }
+              }
+            },
+            ".footer-logo": {
+              "& img": {
+                "width": "auto"
+              }
+            },
+            ".footer-item": {
+              "display": "flex",
+              "align-items": "center",
+              "& a": {
+                "background": "none !important",
+                "text-decoration": "none !important"
+              }
+            },
+            ".footer-item-title": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "footer1",
+          "_sourceTheme": "successm4",
+          "_customHTML": "<section class=\"footer1\" group=\"Footers\" once=\"footers\" always-bottom global mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"logo\" checked>\n        <input type=\"range\" inline title=\"Logo Size\" name=\"logoSize\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"logo\">\n        <input type=\"checkbox\" title=\"Address\" name=\"address\" checked>\n        <input type=\"checkbox\" title=\"Email\" name=\"email\" checked>\n        <input type=\"checkbox\" title=\"Copyright\" name=\"copyright\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"6\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\" condition=\"socialItems > 0\">\n        <input type=\"color\" title=\"Icon Color Border\" name=\"iconColorBorder\" value=\"#ffffff\" condition=\"socialItems > 0\">\n        <input type=\"color\" title=\"Icon Color Hover\" name=\"iconColorHover\" value=\"#4f5b77\" condition=\"socialItems > 0\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n      <fieldset type=\"background\" name=\"bg\" parallax>\n<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/successm4/components/_images/background8.jpg\">\n<input type=\"color\" title=\"Color\" value=\"#84a59d\" selected>\n      </fieldset>\n      <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n      <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n      <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n      <div class=\"media-container-row\">\n<div class=\"footer-logo\" mbr-if=\"logo\">\n    <a href=\"https://mobiri.se\">\n        <img src=\"@PROJECT_PATH@/assets/images/logo-1-96x89.png\" alt=\"Mobirise\" mbr-style=\"{'width': logoSize + 'rem'}\">\n    </a>\n</div>\n<div class=\"footer-item\" mbr-if=\"address\">\n    <p class=\"footer-item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".footer-item-title\"><a href=\"index.html\" class=\"text-white\">天母愛舒眠</a> © Copyright 2021\n</p></div>\n<div class=\"footer-item\" mbr-if=\"email\">\n    <p class=\"footer-item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" data-app-selector=\".footer-item-title\">Designed by <a href=\"https://dler.hopefulcityco.com/\" class=\"text-white\" target=\"_blank\">Dler Life</a>\n    </p> \n</div>\n<div class=\"mbr-social-likes\" mbr-if=\"socialItems > 0\">\n<!--     <p class=\"footer-item-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" data-app-selector=\".footer-item-title\">social media: </p>  -->\n   <a class=\"iconfont-wrapper\" href=\"https://www.facebook.com/lovesleep169/\" target=\"_blank\" mbr-if=\"socialItems > 0\">\n        <span mbr-icon class=\"p-2 mbr-iconfont fa-facebook-f fa fab fa-fw\"></span>\n    </a>\n   <a class=\"iconfont-wrapper\" href=\"https://page.line.me/?accountId=106rfmlb\" target=\"_blank\" mbr-if=\"socialItems > 1\">\n        <span mbr-icon class=\"p-2 mbr-iconfont socicon-line socicon\" style></span>\n    </a>\n   <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"socialItems > 2\">\n        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n    </a>\n   <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"socialItems > 3\">\n        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n    </a>\n   <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"socialItems > 4\">\n        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n    </a>\n   <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"socialItems > 5\">\n        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n    </a>\n </div>\n  \n<p class=\"mbr-text mb-0 mbr-fonts-style row-copyright mbr-dark align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" mbr-if=\"copyright\">\n    © 2020 Success M4 Theme by Mobirise\n      </p></div>\n  </div>\n</section>",
+          "_cid": "sUzhTJECkN",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {},
+          "_anchor": "footer1-d0"
+        },
+        {
+          "_name": "table1",
+          "_sourceTheme": "educationm4",
+          "_customHTML": "<section class=\"section-table table1 educationm4_table1\" group=\"Tables\" plugins=\"dataTables\"\n\tdata-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Columns\" name=\"tableColumns\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Rows\" name=\"tableRows\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMaintitle\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showMainsubtitle\" />\n\t\t<input type=\"checkbox\" title=\"Table Background\" name=\"tbBackground\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Search\" name=\"isSearch\" />\n\t\t<input type=\"text\" title=\"Text Empty\" name=\"textEmpty\" condition=\"isSearch\" value=\"No matching records found\" />\n\t\t<header>Colors</header>\n\t\t<input type=\"color\" title=\"Line\" name=\"lineColor\" value=\"#0a1c44\" condition=\"showMaintitle\" />\n\t\t<input type=\"color\" title=\"Table Head\" name=\"thColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Head Border\" name=\"brColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Border\" name=\"tbColor\" value=\"#e9e9e9\" />\n\t\t<input type=\"color\" title=\"Table Background\" name=\"tbBgColor\" value=\"#ffffff\" condition=\"tbBackground\" />\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" value=\"@ADDONS_PATH@/educationm4/components/_images/background1.jpg\" title=\"Image\" />\n\t\t\t<input type=\"color\" value=\"#ffffff\" title=\"Color\" selected=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\" />\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#232323\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\"\n\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div class=\"container container-table\">\n\t\t<h2 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-2\"\n\t\t\tmbr-if=\"showMaintitle\" data-app-selector=\".mbr-section-title, .line-wrap\">\n\t\t\tStudents Table\n\t\t</h2>\n\t\t<div class=\"line-wrap\" mbr-if=\"showMaintitle\">\n\t\t\t<div class=\"line\"></div>\n\t\t</div>\n\n\t\t<h3 class=\"mbr-section-sub-title pb-4 mbr-normal mbr-fonts-style align-left\" mbr-theme-style=\"display-4\"\n\t\t\tmbr-if=\"showMainsubtitle\" data-app-selector=\".mbr-section-sub-title\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi non arcu rutrum molestie.\n\t\t</h3>\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-lg-9 col-md-12\">\n\t\t\t\t<div class=\"table-wrapper\">\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<div class=\"row search\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_filter\">\n\t\t\t\t\t\t\t\t\t<label mbr-text=\"\" class=\"searchInfo mbr-fonts-style\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-7\">Search:</label>\n\t\t\t\t\t\t\t\t\t<input class=\"form-control input-sm\" disabled=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"container scroll\">\n\t\t\t\t\t\t<table class=\"table\" mbr-class=\"{'isSearch':isSearch}\" cellspacing=\"0\"\n\t\t\t\t\t\t\tdata-empty=\"{{textEmpty}}\">\n\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t<tr class=\"table-heads\" mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\t#\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tAge\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tUsername\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</thead>\n\n\t\t\t\t\t\t\t<tbody mbr-list=\"\" mbr-list-grow=\"tableRows\">\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t1\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tJeanna Schmal\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@jenna\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t2\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tCaren Rials\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@caren\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t3\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tLeon Rogol\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@leon\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t4\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tShala Barrera\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@shala\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"container table-info-container\">\n\t\t\t\t\t\t<div class=\"row info\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_info mbr-fonts-style\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">Showing</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoAfter\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">entries</span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">(filtered from</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredAfter\" data-app-selector=\".dataTables_info\">\n\t\t\t\t\t\t\t\t\t\ttotal entries)</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".container-table": {
+              "margin": "0 auto"
+            },
+            "table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after": {
+              "bottom": "20px !important"
+            },
+            ".line-wrap": {
+              "display": "inline-block",
+              "width": "100%"
+            },
+            ".form-control": {
+              "min-height": "2.5em",
+              "padding": "0.5em 0.5em"
+            },
+            ".line": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "4px",
+              "background-color": "@lineColor",
+              "margin-top": "0.5rem",
+              "margin-bottom": "2rem"
+            },
+            ".scroll": {
+              "overflow-x": "auto",
+              "padding": "0"
+            },
+            ".head-item": {
+              "padding-top": "1.2rem",
+              "padding-bottom": "1.2rem",
+              "background": "@thColor",
+              "border-bottom": "1px solid @brColor",
+              "&:hover": {
+                "background": "@thColor",
+                "color": "inherit"
+              }
+            },
+            ".table-heads": {
+              "color": "#ffffff"
+            },
+            ".dataTables_wrapper": {
+              "display": "block",
+              ".search": {
+                "margin-bottom": "0.5rem"
+              },
+              ".table": {
+                "overflow-x": "auto"
+              }
+            },
+            "table": {
+              "width": "100% !important",
+              "margin-top": "6px",
+              "border-bottom": "1px solid @tbColor",
+              "margin-bottom": "0",
+              "td, th": {
+                "white-space": "nowrap"
+              },
+              "th": {
+                "border-top": "none",
+                "transition": "all 0.2s",
+                "border-bottom": "none",
+                "&:hover": {
+                  "background": "@tbColor",
+                  "color": "contrast(@tbColor)"
+                }
+              },
+              "td": {
+                "border-top": "1px solid @tbColor"
+              },
+              "&.table": {
+                "& when (@tbBackground)": {
+                  "background": "@tbBgColor"
+                }
+              }
+            },
+            ".dataTables_filter": {
+              "text-align": "right",
+              "margin-bottom": "0.5rem",
+              "label": {
+                "display": "inline",
+                "white-space": "normal !important"
+              },
+              "input": {
+                "display": "inline",
+                "width": "auto",
+                "margin-left": "0.5rem",
+                "border-radius": "100px",
+                "padding-left": "1rem"
+              }
+            },
+            ".dataTables_info": {
+              "padding-bottom": "1rem",
+              "padding-top": "1rem",
+              "white-space": "normal !important"
+            },
+            "@media (max-width: 992px)": {
+              ".dataTables_filter": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 350px)": {
+              ".dataTables_filter": {
+                "text-align": "center",
+                "input": {
+                  "width": "100% !important",
+                  "margin-left": "0 !important"
+                }
+              }
+            },
+            ".mbr-section-title, .line-wrap": {
+              "text-align": "center"
+            },
+            ".mbr-section-sub-title": {
+              "text-align": "center",
+              "color": "#656565"
+            }
+          },
+          "_cid": "thuhO7iFon"
+        },
+        {
+          "_name": "table1",
+          "_sourceTheme": "educationm4",
+          "_customHTML": "<section class=\"section-table table1 educationm4_table1\" group=\"Tables\" plugins=\"dataTables\"\n\tdata-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Columns\" name=\"tableColumns\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Rows\" name=\"tableRows\" min=\"1\" max=\"50\" step=\"1\" value=\"4\" />\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMaintitle\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showMainsubtitle\" />\n\t\t<input type=\"checkbox\" title=\"Table Background\" name=\"tbBackground\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"checkbox\" title=\"Search\" name=\"isSearch\" />\n\t\t<input type=\"text\" title=\"Text Empty\" name=\"textEmpty\" condition=\"isSearch\" value=\"No matching records found\" />\n\t\t<header>Colors</header>\n\t\t<input type=\"color\" title=\"Line\" name=\"lineColor\" value=\"#0a1c44\" condition=\"showMaintitle\" />\n\t\t<input type=\"color\" title=\"Table Head\" name=\"thColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Head Border\" name=\"brColor\" value=\"#0a1c44\" />\n\t\t<input type=\"color\" title=\"Table Border\" name=\"tbColor\" value=\"#e9e9e9\" />\n\t\t<input type=\"color\" title=\"Table Background\" name=\"tbBgColor\" value=\"#ffffff\" condition=\"tbBackground\" />\n\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax=\"\">\n\t\t\t<input type=\"image\" value=\"@ADDONS_PATH@/educationm4/components/_images/background1.jpg\" title=\"Image\" />\n\t\t\t<input type=\"color\" value=\"#ffffff\" title=\"Color\" selected=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t<input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\" />\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"@ADDONS_PATH@/educationm4/components/>\n\t\t<input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#232323\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"\n\t\t\tcondition=\"overlay &amp;&amp; bg.type !== 'color'\" />\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\"\n\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div class=\"container container-table\">\n\t\t<h2 class=\"mbr-section-title pb-2 mbr-bold mbr-fonts-style align-left\" mbr-theme-style=\"display-2\"\n\t\t\tmbr-if=\"showMaintitle\" data-app-selector=\".mbr-section-title, .line-wrap\">\n\t\t\tStudents Table\n\t\t</h2>\n\t\t<div class=\"line-wrap\" mbr-if=\"showMaintitle\">\n\t\t\t<div class=\"line\"></div>\n\t\t</div>\n\n\t\t<h3 class=\"mbr-section-sub-title pb-4 mbr-normal mbr-fonts-style align-left\" mbr-theme-style=\"display-4\"\n\t\t\tmbr-if=\"showMainsubtitle\" data-app-selector=\".mbr-section-sub-title\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisi non arcu rutrum molestie.\n\t\t</h3>\n\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div class=\"col-lg-9 col-md-12\">\n\t\t\t\t<div class=\"table-wrapper\">\n\t\t\t\t\t<div class=\"container\">\n\t\t\t\t\t\t<div class=\"row search\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_filter\">\n\t\t\t\t\t\t\t\t\t<label mbr-text=\"\" class=\"searchInfo mbr-fonts-style\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-7\">Search:</label>\n\t\t\t\t\t\t\t\t\t<input class=\"form-control input-sm\" disabled=\"@ADDONS_PATH@/educationm4/components/>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"container scroll\">\n\t\t\t\t\t\t<table class=\"table\" mbr-class=\"{'isSearch':isSearch}\" cellspacing=\"0\"\n\t\t\t\t\t\t\tdata-empty=\"{{textEmpty}}\">\n\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t<tr class=\"table-heads\" mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\t#\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tName\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tAge\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t\t<th mbr-text=\"\" class=\"head-item mbr-fonts-style mbr-bold\"\n\t\t\t\t\t\t\t\t\t\tmbr-theme-style=\"display-4\" data-app-selector=\".head-item\">\n\t\t\t\t\t\t\t\t\t\tUsername\n\t\t\t\t\t\t\t\t\t</th>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</thead>\n\n\t\t\t\t\t\t\t<tbody mbr-list=\"\" mbr-list-grow=\"tableRows\">\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t1\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tJeanna Schmal\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@jenna\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t2\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tCaren Rials\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@caren\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t3\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tLeon Rogol\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@leon\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t<tr mbr-list=\"\" mbr-list-grow=\"tableColumns\">\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t4\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\tShala Barrera\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t<td mbr-text=\"\" class=\"body-item mbr-fonts-style\" mbr-theme-style=\"display-4\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".body-item\">\n\t\t\t\t\t\t\t\t\t\t@shala\n\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t</table>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"container table-info-container\">\n\t\t\t\t\t\t<div class=\"row info\" mbr-if=\"isSearch\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"dataTables_info mbr-fonts-style\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">Showing</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoAfter\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">entries</span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredBefore\"\n\t\t\t\t\t\t\t\t\t\tdata-app-selector=\".dataTables_info\">(filtered from</span>\n\t\t\t\t\t\t\t\t\t<span class=\"inactive infoRows\"></span>\n\t\t\t\t\t\t\t\t\t<span mbr-text=\"\" class=\"infoFilteredAfter\" data-app-selector=\".dataTables_info\">\n\t\t\t\t\t\t\t\t\t\ttotal entries)</span>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\"></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".container-table": {
+              "margin": "0 auto"
+            },
+            "table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after": {
+              "bottom": "20px !important"
+            },
+            ".line-wrap": {
+              "display": "inline-block",
+              "width": "100%"
+            },
+            ".form-control": {
+              "min-height": "2.5em",
+              "padding": "0.5em 0.5em"
+            },
+            ".line": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "4px",
+              "background-color": "@lineColor",
+              "margin-top": "0.5rem",
+              "margin-bottom": "2rem"
+            },
+            ".scroll": {
+              "overflow-x": "auto",
+              "padding": "0"
+            },
+            ".head-item": {
+              "padding-top": "1.2rem",
+              "padding-bottom": "1.2rem",
+              "background": "@thColor",
+              "border-bottom": "1px solid @brColor",
+              "&:hover": {
+                "background": "@thColor",
+                "color": "inherit"
+              }
+            },
+            ".table-heads": {
+              "color": "#ffffff"
+            },
+            ".dataTables_wrapper": {
+              "display": "block",
+              ".search": {
+                "margin-bottom": "0.5rem"
+              },
+              ".table": {
+                "overflow-x": "auto"
+              }
+            },
+            "table": {
+              "width": "100% !important",
+              "margin-top": "6px",
+              "border-bottom": "1px solid @tbColor",
+              "margin-bottom": "0",
+              "td, th": {
+                "white-space": "nowrap"
+              },
+              "th": {
+                "border-top": "none",
+                "transition": "all 0.2s",
+                "border-bottom": "none",
+                "&:hover": {
+                  "background": "@tbColor",
+                  "color": "contrast(@tbColor)"
+                }
+              },
+              "td": {
+                "border-top": "1px solid @tbColor"
+              },
+              "&.table": {
+                "& when (@tbBackground)": {
+                  "background": "@tbBgColor"
+                }
+              }
+            },
+            ".dataTables_filter": {
+              "text-align": "right",
+              "margin-bottom": "0.5rem",
+              "label": {
+                "display": "inline",
+                "white-space": "normal !important"
+              },
+              "input": {
+                "display": "inline",
+                "width": "auto",
+                "margin-left": "0.5rem",
+                "border-radius": "100px",
+                "padding-left": "1rem"
+              }
+            },
+            ".dataTables_info": {
+              "padding-bottom": "1rem",
+              "padding-top": "1rem",
+              "white-space": "normal !important"
+            },
+            "@media (max-width: 992px)": {
+              ".dataTables_filter": {
+                "text-align": "center"
+              }
+            },
+            "@media (max-width: 350px)": {
+              ".dataTables_filter": {
+                "text-align": "center",
+                "input": {
+                  "width": "100% !important",
+                  "margin-left": "0 !important"
+                }
+              }
+            },
+            ".mbr-section-title, .line-wrap": {
+              "text-align": "center"
+            },
+            ".mbr-section-sub-title": {
+              "text-align": "center",
+              "color": "#656565"
+            }
+          },
+          "_cid": "thuhP3h7AU"
         }
       ]
     }
